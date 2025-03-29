@@ -1,6 +1,9 @@
+flask
 tensorflow
 numpy
-flask
-keras
+pandas
+pillow
+scikit-learn
+flask-cors
+werkzeug
 gunicorn
-
