@@ -56,7 +56,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load the trained model
-model = tf.keras.models.load_model("../model/model.keras")
+model = tf.keras.models.load_model("model/model.keras")
 
 # Class names corresponding to the labels
 class_names = ["vascular lesion", "squamous cell carcinoma", "seborrheic keratosis", 
