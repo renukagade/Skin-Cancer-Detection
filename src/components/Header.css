@@ -1,0 +1,28 @@
+/* Header container */
+.header {
+  background-image: linear-gradient(#00e1ff, #090707);
+  color: white; /* White text */
+  text-align: center; /* Centered text */
+  padding: 20px 0; /* Vertical padding */
+  font-size: 22px; /* Text size */
+  font-weight: bold; /* Bold text */
+  width: 100%; /* Full width */
+  position: fixed; /* Fixed at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures it stays above other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for better visibility */
+}
+
+/* Ensuring content below the header doesn't get hidden */
+body {
+  padding-top: 80px; /* Adjust according to header height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+      font-size: 18px; /* Smaller font size for mobile */
+      padding: 15px 0;
+  }
+}

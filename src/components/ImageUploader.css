@@ -1,0 +1,81 @@
+/* Main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Fits within the viewport */
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Title styling */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form container */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px; /* Adjusted width */
+}
+
+/* File input */
+.file-input {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Image preview - Increased Size */
+.image-preview {
+  width: 100%;  /* Makes image fit the container */
+  max-width: 450px; /* Prevents it from being too large */
+  height: auto;  /* Maintains aspect ratio */
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  object-fit: contain; /* Ensures image fits without distortion */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Upload button */
+.upload-button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 15px;
+}
+
+.upload-button:hover {
+  background-color: #1a252f;
+}
+
+.upload-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}

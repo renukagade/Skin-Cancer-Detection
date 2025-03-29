@@ -1,0 +1,59 @@
+.result-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin-top: 20px; /* Increased spacing for better placement */
+  gap: 10px;
+}
+
+/* Prediction label */
+.result-container h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Prediction result text */
+.prediction-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #27ae60;
+  margin-left: 8px;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh; /* Ensures proper spacing */
+}
+
+/* Form container */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 550px;
+  margin-bottom: 20px; /* Increased margin for better placement */
+}
