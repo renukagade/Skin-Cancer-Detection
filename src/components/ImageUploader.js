@@ -62,7 +62,7 @@ const ImageUploader = () => {
         formData.append("file", file);
 
         try {
-            const response = await axios.post("http://127.0.0.1:5000/predict", formData);
+            const response = await axios.post("https://skin-cancer-detection-1-a8xz.onrender.com", formData);
             console.log("Prediction Response:", response.data); // Log entire response
             if (response.data && response.data.prediction) {
                 setPrediction(response.data.prediction); // Ensure correct key
